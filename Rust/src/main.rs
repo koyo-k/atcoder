@@ -1,3 +1,7 @@
+use proconio::input;
 fn main() {
-    println!("Hello, world!");
+    input! {
+        x: [usize; 10],
+    }
+    println!("{:?}", x[x[x[0]]]);
 }
