@@ -6,10 +6,6 @@ fn main() {
         a: usize,
         b: usize,
     }
-    let sa = s[a - 1];
-    let sb = s[b - 1];
-    s[a - 1] = sb;
-    s[b - 1] = sa;
-    let ans: String = s.iter().collect();
-    println!("{}", &ans);
+    s.swap(a - 1, b - 1);
+    println!("{}", s.iter().collect::<String>());
 }
