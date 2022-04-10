@@ -1,12 +1,9 @@
-use proconio::{input, marker::Chars};
+use proconio::input;
 
 fn main() {
     input! {
-        mut s: Chars,
+        s: String,
     }
     print!("0");
-    s.pop();
-    for v in s {
-        print!("{}", v);
-    }
+    print!("{}", &s[..3]);
 }
