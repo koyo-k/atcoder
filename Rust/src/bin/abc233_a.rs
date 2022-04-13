@@ -1,5 +1,4 @@
 use proconio::input;
-use std::cmp;
 
 fn main() {
     input! {
@@ -7,5 +6,5 @@ fn main() {
         y: i32,
     }
 
-    println!("{}", cmp::max(0, (y - x + 9) / 10));
+    println!("{}", 0.max((y - x + 9) / 10));
 }
